@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+<body>
+
+<img src="https://www.swinburne.edu.my/wp-content/themes/mytheme-2021/images/logo-long-full.svg" alt="swinburne logo">
+<h2>CWA Help Desk Appointment</h2>
+
+    <p>The help desk is located in ATC620. Open 10:30 - 19:00 Monday to Friday </p>
+    <p>Check Blackboard or when CWA tutors ill be there</p>
+
+<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" border="1">
+    <!-- student details-->
+<fieldset>
+     <legend>Student details</legend>
+
+        <p>
+            <label for="sid">student ID</label>
+            <input type="text" name="sid" id="sid" maxlength="10" minlength="7" placeholder="j0000000 " required >
+<br>
+        </p>
+        <p>
+            <label for="gname">Given name</label>
+            <input type="text" name="gname" id="gname" maxlength="15" size="20" placeholder="" required >       
+
+            <label for="fname">family name</label>
+            <input type="text" name="fname" id="fname" maxlength="20" size="20" required >
+        </p>
+        <br>
+</fieldset>
+
+    <!-- course details-->
+
+    <fieldset>
+            <legend required >Course</legend>
+                <label for="COS10011"> COS10011</label>
+                <input type="radio" name="gender" id="COS10011" value="COS10011" >
+
+                <label for="COS6004"> COS6004</label>
+                <input type="radio" name="gender" id="COS6004" value="COS6004" >
+
+                <label for="COS6007"> COS6007</label>
+                <input type="radio" name="gender" id="COS6007" value="COS6007" >
+        </p>
+
+
+        <label for="rk">Your tutor</label>
+        <select name="tutor" id="rk">
+
+         <option value=" " selected>please select</option>
+        <option value="2" >professor 1</option>
+        <option value="3" >professor 2</option>
+        <option value="4" >professor 3</option>
+
+        </select>
+
+
+    </fieldset>
+ 
+</fieldset>
+<br>
+<fieldset>
+
+ <!--checkbox-->
+<legend>issue</legend>
+
+    <label for="html">html</label>
+    <input type="checkbox"  name="Things[]" id="html" value="Location" checked>
+
+    <label for="css">CSS</label>
+    <input type="checkbox"  name="Things[]" id="css" value="Location" >
+
+    <label for="javascript">Javascript</label>
+    <input type="checkbox"  name="Things[]" id="javascript" value="Location" >
+
+    <label for="Php">Php</label>
+    <input type="checkbox"  name="Things[]" id="Php" value="Location" >
+
+    <label for="my">MySQL</label>
+    <input type="checkbox"  name="Things[]" id="my" value="Location" >
+
+    <p><label>Description of issue</label></p>
+    <input type="textarea" name="comments" placeholder="write your description her..."></input>
+
+</fieldset>
+
+<br>
+ <!--time & date-->
+ <fieldset>
+    <legend>Preffered date & Time</legend>
+
+    <p>
+        <input type="date" name="bday"  required>
+    </p>
+    <p>
+        <input type="time" name="bdaytime" min="10:30" max="19:00" >
+    </p>
+
+</fieldset>
+    <br>
+        <input type="submit" value="Book">
+        <input type="reset" value="reset">
+</form>
+
+</body>
+
+</html>
